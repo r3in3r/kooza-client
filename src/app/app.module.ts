@@ -9,6 +9,7 @@ import { FooterComponent } from './footer/footer.component';
 import { RetailersComponent } from './retailers/retailers.component';
 import { LeftmenuComponent } from './leftmenu/leftmenu.component';
 import { RetailerOverviewComponent } from './retailer-overview/retailer-overview.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { RetailerOverviewComponent } from './retailer-overview/retailer-overview
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
