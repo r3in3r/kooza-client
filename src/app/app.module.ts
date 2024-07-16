@@ -6,10 +6,12 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { RetailersComponent } from './retailers/retailers.component';
-import { LeftmenuComponent } from './leftmenu/leftmenu.component';
-import { RetailerOverviewComponent } from './retailer-overview/retailer-overview.component';
+import {MatPaginatorModule } from '@angular/material/paginator';
+
+
 import { HttpClientModule } from '@angular/common/http';
+import { GameServerListComponent } from './game-server-list/game-server-list.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -17,14 +19,16 @@ import { HttpClientModule } from '@angular/common/http';
     HomeComponent,
     HeaderComponent,
     FooterComponent,
-    RetailersComponent,
-    LeftmenuComponent,
-    RetailerOverviewComponent
+    GameServerListComponent
+
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    MatPaginatorModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
